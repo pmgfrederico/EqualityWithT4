@@ -1,0 +1,13 @@
+﻿public partial class <#= ClassName #> : IEntity<<#= TIdentifier #>> // IEntity<TIdentifier> Impl
+{
+	public <#= TIdentifier #> Id
+	{
+		get;
+		private set;
+	}
+
+	object IEntity.GetId()
+	{
+		return this.Id;
+	}
+}

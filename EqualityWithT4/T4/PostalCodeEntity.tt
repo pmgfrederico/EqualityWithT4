@@ -1,0 +1,21 @@
+﻿<#@template language="C#"#>
+<#@output extension="g.cs" #>
+
+<# 
+	string NamespaceName = "EqualityWithT4";
+	string ClassName = "PostalCode";
+	string TIdentifier = "Guid";
+#>
+
+using System;
+
+namespace <#= NamespaceName #>
+{
+	<#@include file="_IEntityOfTStructImpl.tt" #>
+
+	<#@include file="_EntityCtor.tt" #>
+	
+	<#@include file="_EquatableEntity.tt" #>
+	
+	<#@include file="_IEquatableOfClassName.tt" #>
+}

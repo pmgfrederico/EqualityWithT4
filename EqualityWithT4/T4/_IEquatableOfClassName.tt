@@ -1,0 +1,7 @@
+﻿public partial class <#= ClassName #> : IEquatable<<#= ClassName #>> // IEquality<<#= ClassName #>> when required
+{
+	public bool Equals(<#= ClassName #> other)
+	{
+		return this.EntityEquals(other);
+	}
+}

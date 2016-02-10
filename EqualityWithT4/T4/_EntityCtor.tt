@@ -1,0 +1,9 @@
+﻿public partial class <#= ClassName #> // Default .ctor Impl
+{
+	public <#= ClassName #>(<#= TIdentifier #> id) // This ctor supports entity objects represented solely by their identifiers
+	{
+		this.EnforceIdentifierValid(id, "id");
+
+		this.Id = id;
+	}
+}

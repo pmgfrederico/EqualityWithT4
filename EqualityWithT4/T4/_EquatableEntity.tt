@@ -1,0 +1,22 @@
+﻿public partial class <#= ClassName #> // Equals override
+{
+	public override int GetHashCode()
+	{
+		return this.GetEntityHashCode();
+	}
+
+	public override bool Equals(object obj)
+	{
+		return this.EntityEquals(obj);
+	}
+
+	public static bool operator ==(<#= ClassName #> @this, <#= ClassName #> that)
+	{
+		return @this.EntityEquals(that);
+	}
+
+	public static bool operator !=(<#= ClassName #> @this, <#= ClassName #> that)
+	{
+		return !@this.EntityEquals(that);
+	}
+}

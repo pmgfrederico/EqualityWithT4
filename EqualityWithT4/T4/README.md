@@ -1,4 +1,4 @@
-Domain Layer Entities and an Identity that is represented by an Identifier. In our case the contract that stands for an entity typically is IEntity<Guid>.
+Domain Layer Entities and an Identity that is represented by an Identifier. In our case the contract that stands for an entity typically is IEntityOfGuid
 
 An Entity typically has 3 states:
 
@@ -16,7 +16,7 @@ to enforce the data contract of the entity.
 
 The entity is a prototype that is yet to be persisted
 
-The last two states, Reconstituted and Create typically can benefit from a second .ctor that uses a Nullable<Guid> to differentiate Reconstitution from Creation.
+The last two states, Reconstituted and Created typically can benefit from a second .ctor that uses a NullableOfGuid to differentiate Reconstitution from Creation.
 e.g. public Genre(string desigantion, Guid? id)
 
 

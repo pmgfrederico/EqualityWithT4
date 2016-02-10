@@ -59,6 +59,8 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+    <None Include="T4\README.md">
+    </None>
     <None Include="T4\_EntityCtor.tt" />
     <None Include="T4\_EquatableEntity.tt" />
     <None Include="T4\_IEquatableOfClassName.tt" />

@@ -1,7 +1,7 @@
 # EqualityWithT4
 DDD Entity Equality Implementation
 
-DDD Entities are defined in nature by its Identity, typically defined by an Identifier. On most systems this means that proper Equality
+DDD Entities are defined in nature by its Identity, typically represented by an Identifier. On most systems this means that proper Equality
 implementation relies on equality by value.
 
 This is a great opportunity for code reuse and single shot unit testing.
